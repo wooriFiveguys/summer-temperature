@@ -1,9 +1,4 @@
 streamlit
 Pillow
-os
 pandas
-datetime
 matplotlib
-matplotlib.pyplot
-glob
-matplotlib.dates
