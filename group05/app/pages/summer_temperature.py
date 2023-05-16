@@ -16,7 +16,7 @@ def get_month_highest_sensible_temperature(month_select):
     original_title = '<div style = "font-size:50px;display:inline;">날짜 별 전국 </div><div style = "color:#34F9A0;font-size:50px;display:inline;">최고 체감 </div><div style = "font-size:50px;display:inline;">온도🌡</div>'
     st.markdown(original_title, unsafe_allow_html=True)
     folder = '/data/'
-    file_path=os.path.dirname(os.path.abspath(__file__).parent)+folder
+    file_path=sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))+folder
     # 파일 읽어오기
     if month_select == '6월':
         df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
