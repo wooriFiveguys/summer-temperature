@@ -15,20 +15,20 @@ def get_month_highest_sensible_temperature(month_select):
     
     original_title = '<div style = "font-size:50px;display:inline;">날짜 별 전국 </div><div style = "color:#34F9A0;font-size:50px;display:inline;">최고 체감 </div><div style = "font-size:50px;display:inline;">온도🌡</div>'
     st.markdown(original_title, unsafe_allow_html=True)
-
-    file_path=os.path.dirname(os.path.abspath(__file__))
+    folder = '/data/'
+    file_path=os.path.dirname(os.path.abspath(__file__))+folder
     # 파일 읽어오기
     if month_select == '6월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
 
     elif month_select == '7월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
 
     elif month_select == '8월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
 
     elif month_select == '9월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
     
     fig, ax = plt.subplots(figsize=(10,7))
     ax.scatter(x=df['일시'], y=df['최고체감온도(°C)'], color = '#34F9A0')
