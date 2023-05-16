@@ -47,19 +47,20 @@ def get_month_highest_temperature(month_select):
     original_title = '<div style = "font-size:50px;display:inline;">날짜 별 전국 </div><div style = "color:red;font-size:50px;display:inline;">최고 </div><div style = "font-size:50px;display:inline;">기온🌡</div>'
     st.markdown(original_title, unsafe_allow_html=True)
 
-    file_path=os.path.dirname(os.path.abspath(__file__))
+    folder = '/data/'
+    file_path=os.path.dirname(os.path.abspath(os.path.dirname(__file__)))+folder
     # 파일 읽어오기
     if month_select == '6월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
 
     elif month_select == '7월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
 
     elif month_select == '8월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
 
     elif month_select == '9월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
 
     fig, ax = plt.subplots(figsize=(10,7))
     ax.scatter(x=df['일시'], y=df['최고기온(°C)'],color = 'red')
@@ -78,19 +79,20 @@ def get_month_avg_temperature(month_select):
     original_title = '<div style = "font-size:50px;display:inline;">날짜 별 전국 </div><div style = "color:#F182FD;font-size:50px;display:inline;">평균 </div><div style = "font-size:50px;display:inline;">기온🌡</div>'
     st.markdown(original_title, unsafe_allow_html=True)
 
-    file_path=os.path.dirname(os.path.abspath(__file__))
+    folder = '/data/'
+    file_path=os.path.dirname(os.path.abspath(os.path.dirname(__file__)))+folder
     # 파일 읽어오기
     if month_select == '6월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
 
     elif month_select == '7월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
 
     elif month_select == '8월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
 
     elif month_select == '9월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
 
     fig, ax = plt.subplots(figsize=(10,7))
     ax.scatter(x=df['일시'], y=df['평균기온(°C)'], color = '#F182FD')
@@ -113,19 +115,20 @@ def get_month_lowest_temperature(month_select):
     original_title = '<div style = "font-size:50px;display:inline;">날짜 별 전국 </div><div style = "color:blue;font-size:50px;display:inline;">최저 </div><div style = "font-size:50px;display:inline;">기온🌡</div>'
     st.markdown(original_title, unsafe_allow_html=True)
 
-    file_path=os.path.dirname(os.path.abspath(__file__))
+    folder = '/data/'
+    file_path=os.path.dirname(os.path.abspath(os.path.dirname(__file__)))+folder
     # 파일 읽어오기
     if month_select == '6월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-06_2022-06_2022.csv', encoding='EUC-KR')
 
     elif month_select == '7월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-07_2022-07_2022.csv', encoding='EUC-KR')
 
     elif month_select == '8월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-08_2022-08_2022.csv', encoding='EUC-KR')
 
     elif month_select == '9월':
-        df = pd.read_csv(file_path+'/ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
+        df = pd.read_csv(file_path+'ISSUE_HW_DAY_2022-09_2022-09_2022.csv', encoding='EUC-KR')
 
     fig, ax = plt.subplots(figsize=(10,7))
     ax.scatter(x=df['일시'], y=df['최저기온(°C)'], color = 'blue')
