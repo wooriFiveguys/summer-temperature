@@ -1,5 +1,5 @@
 streamlit
-PIL
+Pillow
 os
 pandas
 datetime
