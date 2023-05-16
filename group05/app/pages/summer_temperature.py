@@ -15,7 +15,7 @@ def get_month_highest_sensible_temperature(month_select):
     
     original_title = '<div style = "font-size:50px;display:inline;">날짜 별 전국 </div><div style = "color:#34F9A0;font-size:50px;display:inline;">최고 체감 </div><div style = "font-size:50px;display:inline;">온도🌡</div>'
     st.markdown(original_title, unsafe_allow_html=True)
-    folder = '\data\'
+    folder = '/data/'
     file_path=os.path.dirname(os.path.abspath(__file__))+folder
     # 파일 읽어오기
     if month_select == '6월':
