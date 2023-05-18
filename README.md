@@ -1,6 +1,6 @@
 ## 주제🌞
-22년도 여름 기온 시각화 및 분석(2023.05.15 ~ 2023.05.17)
-배포 URL: https://woorifiveguys-summer-temperature-group05appmain-page-syorh1.streamlit.app/
+- 22년도 여름 기온 시각화 및 분석(2023.05.15 ~ 2023.05.17)
+- 배포 URL: https://woorifiveguys-summer-temperature-group05appmain-page-syorh1.streamlit.app/
 
 ## 데이터🌡
 - 공공 데이터 사용
