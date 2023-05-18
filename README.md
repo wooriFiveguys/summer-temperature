@@ -1,10 +1,11 @@
 # 주제
-- 22년도 여름 기온 시각화 및 분석
+22년도 여름 기온 시각화 및 분석
+
 
 
 # 데이터
-- 공공 데이터 사용
-- 기상청의 폭염 데이터 셋
+공공 데이터 사용
+기상청의 폭염 데이터 셋
 - [https://data.kma.go.kr/data/weatherIssue/slthtList.do?pgmNo=690](https://data.kma.go.kr/data/weatherIssue/slthtList.do?pgmNo=690)
 - 일시, 지점, 최고 체감온도, 기온(최고/평균/최저),
 - 상대 습도, 폭염 특보, 폭염 예보, 열대야, 자외선 지수 제공
